@@ -1,5 +1,5 @@
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow, QPushButton,QLabel,QLineEdit,QComboBox,QVBoxLayout,QWidget
+from PySide6.QtWidgets import QApplication, QMainWindow,QWidget,QVBoxLayout, QHBoxLayout,QPushButton,QLabel,QLineEdit,QComboBox
 from PySide6.QtCore import Qt
 
 class MyWindow(QWidget):
@@ -7,7 +7,6 @@ class MyWindow(QWidget):
         super().__init__()
 
         self.mainlayout = QVBoxLayout()
-
         self.setLayout(self.mainlayout)
         self.bind()
 
